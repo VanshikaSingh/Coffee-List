@@ -2,12 +2,12 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.1.2.
 Data is managed via NgRx Store.
-HTTP request is dispatched via NgRx Effects
-Added breakpoint for mobile and desktop
-Used Bootstrap as the UI Framework
-Used ngx-pagination module to implement pagination in the app
-Used NgRx Selector for retreiving data from the Stroe
-Applied OnPush ChangeDetection
+HTTP request is dispatched via NgRx Effects.
+Added breakpoint for mobile and desktop.
+Used Bootstrap as the UI Framework.
+Used ngx-pagination module to implement pagination in the app.
+Used NgRx Selector for retreiving data from the Stroe.
+Applied OnPush ChangeDetection.
 
 ## Development server
 
