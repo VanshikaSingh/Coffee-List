@@ -1,0 +1,11 @@
+
+.container{
+    padding-top: 50px !important;
+}
+/* Small screen devices */
+@media only screen and (max-width: 600px) {
+    .container{
+        padding-top: 0;
+        background-color: rgba(232,206,179,255);
+    }
+}
