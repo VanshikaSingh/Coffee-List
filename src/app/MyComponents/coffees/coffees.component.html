@@ -1,25 +1,24 @@
 <div class="coffees-container">
-<div class="loading" *ngIf="this.coffeeList.length === 0 else elseBlock">Loading
-</div>
-<ng-template #elseBlock>
-<div  *ngFor="let coffee of coffeeList | paginate: { itemsPerPage: pageSize, currentPage: currentPage }">
-    <div class="grid text-center">  
+  <div class="loading" *ngIf="this.coffeeList.length === 0; else elseBlock">Loading
+  </div>
+  <ng-template #elseBlock>
+    <div  *ngFor="let coffee of coffeeList | paginate: { itemsPerPage: pageSize, currentPage: currentPage }">
+      <div class="grid text-center">  
         <div >
-            <h3>{{coffee.blend_name}}</h3>  
-            <p>Origin: {{coffee.origin}}</p>
-            <p>Variety: {{coffee.variety}}</p>
-            <p>Notes: {{coffee.notes}}</p>
-            <p>Intensifier: {{coffee.intensifier}}</p>
+          <h3>{{coffee.blend_name}}</h3>         
+          <p>Origin: {{coffee.origin}}</p>
+          <p>Variety: {{coffee.variety}}</p>
+          <p>Notes: {{coffee.notes}}</p>
+          <p>Intensifier: {{coffee.intensifier}}</p>
           <div class="custom-hr">
             <hr>
-            <img class="icon" src="https://img.icons8.com/glyph-neue/64/null/coffee.png"/>
-          <hr>
-        </div>
+              <img class="icon" src="https://img.icons8.com/glyph-neue/64/null/coffee.png"/>
+            <hr>
+          </div>
         </div>
       </div>
-    </div>
-
-</ng-template>
+    </div>  
+  </ng-template>
 </div>
 <div class="text-center">
   <pagination-controls (pageChange)="currentPage = $event"></pagination-controls>

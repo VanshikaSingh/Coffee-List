@@ -1,12 +1,10 @@
 .coffees-container{
-   background-color: rgba(232,206,179,255);
-   -webkit-box-shadow: 5px 5px 15px 5px #000000; 
-   box-shadow: 5px 5px 15px 5px #000000;
-
+   background-color: rgba(232,206,179,255); 
+   box-shadow: .5rem .5rem 1.5rem .5rem #000000;
 }
 .loading{
     align-items: center;
-    margin: 15rem;
+    margin-left: 50%;
 }
 .coffees h3{
    background-color:rgba(45,44,42,255)
@@ -42,8 +40,8 @@ hr{
 /* Small screen devices */
 @media only screen and (max-width: 600px) {
     .coffees-container{
-        -webkit-box-shadow: 0 0 0 0 #000000; 
-        box-shadow: 0 0 0 0  #000000;
+        height: 100vh;
+        box-shadow: 0 0 #000000;
      }
      .heading{
         padding-bottom:0;
